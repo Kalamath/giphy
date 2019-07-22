@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="assets/images/gifgif.gif" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <title>Gifnificent</title>
+
+  <style>
+    .main {
+      background-image: url("assets/images/ttcgif.gif"), url("assets/images/giphy1.gif"), url("assets/images/giphy3.gif");
+      background-position: left top, center top, right top;
+      background-repeat: repeat-y, repeat-y, repeat-y;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section class="jumbotron main text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Gifnificent!</h1>
+      <form id="artist-form">
+        <label for="artist-input">Add a Artist, Pimp!</label>
+        <br>
+        <input type="text" id="artist-input">
+        <!-- Button triggers new artist to be added -->
+        <button id="add-artist" type="submit" class="btn btn-danger">Summon Artist</button>
+
+
+      </form>
+
+      <div class="album py-5 bg-transparent">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Rendered Buttons will get Dumped Here  -->
+              <div id="buttons-view"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- <div id="parent-container" style="position:relative;">
+    <div id="video-container" style="z-index: -1;">
+      
+    </div>
+  </div> -->
+
+  <section class="jumbotron artistDump text-center">
+    <!-- The video -->
+    <!-- <video autoplay muted loop id="myVideo">
+      <source src="assets/images/feelingstarry.mp4" type="video/mp4">
+      </video> -->
+        <div class="album py-5 artistDump">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <!-- Artists will Get Dumped Here -->
+                <div id="artists-view"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Script -->
+  <script type="text/javascript" src="assets/javascript/main.js"></script>
+</body>
+
+</html>
