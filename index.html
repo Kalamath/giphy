@@ -13,6 +13,14 @@
   <title>Gifnificent</title>
 
   <style>
+    .artistDump {
+      background-image: url("assets/images/bananas.png");
+    }
+
+    body {
+      background-image: url("assets/images/food.png");
+    }
+
     .main {
       background-image: url("assets/images/ttcgif.gif"), url("assets/images/giphy1.gif"), url("assets/images/giphy3.gif");
       background-position: left top, center top, right top;
@@ -26,11 +34,11 @@
 
   <section class="jumbotron main text-center">
     <div class="container">
-      <h1 class="jumbotron-heading">Gifnificent!</h1>
+      <img src="assets/images/Gifnificent.png" class="img-fluid" alt="taylor">
       <form id="artist-form">
-        <label for="artist-input">Add a Artist, Pimp!</label>
+        <label for="artist-input"></label>
         <br>
-        <input type="text" id="artist-input">
+        <input type="text" id="artist-input" placeholder="Choose your Artist!">
         <!-- Button triggers new artist to be added -->
         <button id="add-artist" type="submit" class="btn btn-danger">Summon Artist</button>
 
@@ -59,23 +67,20 @@
       
     </div>
   </div> -->
-
-  <section class="jumbotron artistDump text-center">
-    <!-- The video -->
-    <!-- <video autoplay muted loop id="myVideo">
-      <source src="assets/images/feelingstarry.mp4" type="video/mp4">
-      </video> -->
-        <div class="album py-5 artistDump">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <!-- Artists will Get Dumped Here -->
-                <div id="artists-view"></div>
-          </div>
-        </div>
+  <div class="container">
+    <div class="jumbotron artistDump p-4 p-md-5">
+      <div class="col-md-6 px-0">
+        <!-- Artists will Get Dumped Here -->
+        <div id="artists-view"></div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- The video -->
+  <!-- <video autoplay muted loop id="myVideo">
+      <source src="assets/images/feelingstarry.mp4" type="video/mp4">
+      </video> -->
+
 
   <!-- jQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

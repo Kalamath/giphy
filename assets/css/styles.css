@@ -1,3 +1,7 @@
+body {
+    background-image: url("assets/images/bananas.png");
+}
+
 .album {
     background-image: url("assets/images/giphy.gif");
     background-size: contain;
