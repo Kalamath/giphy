@@ -32,11 +32,31 @@ function displayArtistInfo() {
             var artistImage = $("<img>");
             // Setting the src attribute of the image to a property pulled off the result item
             artistImage.attr("src", results[i].images.fixed_height.url);
+            artistImage.attr("data-still", results[i].images.fixed_height_still.url);
+            artistImage.attr("data-animate", results[i].images.fixed_height.url);
+            artistImage.attr("data-state", "still");
+            
+            artistImage.addClass("gif");
 
             artistDiv.append(artistImage);
 
             // Putting the artist before the previous artists
             $("#artists-view").prepend(artistDiv);
+
+            $(".gif").on("click", function() {
+                // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+                var state = $(this).attr("data-state");
+                // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+                // Then, set the image's data-state to animate
+                // Else set src to the data-still value
+                if (state === "still") {
+                  $(this).attr("src", $(this).attr("data-animate"));
+                  $(this).attr("data-state", "animate");
+                } else {
+                  $(this).attr("src", $(this).attr("data-still"));
+                  $(this).attr("data-state", "still");
+                }
+              });
         }
     });
 
@@ -73,6 +93,7 @@ $("#add-artist").on("click", function (event) {
 
     renderButtons();
 });
+
 
 $(document).on("click", ".artist-btn", displayArtistInfo);
 
