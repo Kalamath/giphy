@@ -1,4 +1,4 @@
-var artists = ["Drake", "Beyonce", "The Beatles", "Dr. Dre"];
+var artists = ["Tyler the Creator", "Drake", "Beyonce", "The Beatles", "Dr. Dre", "Taylor Swift", "Michael Jackson", "Nicki Minaj", "Childish Gambino", "Jimmy Hendrix", "Willie Nelson", "Snoop Dogg"];
 
 function displayArtistInfo() {
 
@@ -98,3 +98,11 @@ $("#add-artist").on("click", function (event) {
 $(document).on("click", ".artist-btn", displayArtistInfo);
 
 renderButtons();
+
+function storeButtons() {
+    localStorage.setItem('buttonNames', artists.toString())
+}
+
+function getButtons() {
+    return localStorage.getItem('buttonNames')
+}
