@@ -2,6 +2,10 @@ body {
     background-image: url("assets/images/bananas.png");
 }
 
+button {
+    margin: 5px;
+}
+
 .album {
     background-image: url("assets/images/giphy.gif");
     background-size: contain;
@@ -9,6 +13,13 @@ body {
     color: red;
 }
 
+.navbar {
+    background-color: #e08b1a;
+}
+
+.navbar-brand {
+    background-image: url("assets/images/Gifnificent.png");
+}
 /* Video */
 
 #myVideo {
