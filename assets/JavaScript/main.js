@@ -1,4 +1,4 @@
-var artists = ["Tyler the Creator", "Drake", "Beyonce", "The Beatles", "Dr. Dre", "Taylor Swift", "Michael Jackson", "Nicki Minaj", "Childish Gambino", "Jimmy Hendrix", "Willie Nelson", "Snoop Dogg"];
+var artists = ["Tyler the Creator", "Drake", "Beyonce", "The Beatles", "Justin Timberlake", "Dr. Dre", "Nirvana", "Taylor Swift", "Michael Jackson", "Nicki Minaj", "Childish Gambino", "Jimmy Hendrix", "Willie Nelson", "Snoop Dogg"];
 
 function displayArtistInfo() {
 
