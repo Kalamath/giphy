@@ -1,9 +1,13 @@
+.artist-btn {
+    margin: 5px;
+}
+
 body {
     background-image: url("assets/images/bananas.png");
 }
 
 button {
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .album {
